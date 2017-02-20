@@ -1,0 +1,78 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: #ccc;
+    user-select: none;
+}
+
+.game {
+    margin: 50px auto 30px;
+    position: relative;
+    height: 640px;
+    width: 865px;
+}
+
+canvas {
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    margin: auto;
+}
+
+.wrap {
+    border: 3px solid lightseagreen;
+}
+
+.text {
+    position: absolute;
+    top: 15px;
+    font: 25px Helvetica, sans-serif;
+    font-weight: bold;
+    color: #0e4396;
+    z-index: 100;
+}
+
+.health {
+    left: 15px;
+}
+
+.score {
+    right: 15px;
+}
+
+.game-over {
+    position: relative;
+    height: 640px;
+    background: rgba(87, 91, 239, .5);
+    color: white;
+    font: 64px Helvetica, sans-serif;
+    z-index: 1000;
+    text-transform: uppercase;
+    text-align: center;
+    padding-top: 250px;
+}
+
+.button {
+    width: 300px;
+    height: 50px;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    margin-left: -150px;
+    margin-top: 100px;
+    font-size: 28px;
+    background: #f74642;
+    line-height:50px;
+    border-radius: 25px;
+}
+.button:hover {
+    background: #c4322f;
+    cursor:pointer;
+}
